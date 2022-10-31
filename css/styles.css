@@ -11,7 +11,12 @@ body, header, nav, main, footer, img, h1 {
 	border: 0;
 }
 
-/* Style rule for images */
+/* Style rule for body and images */
+
+body {
+	background-color: #fff;
+}
+	
 img {
 	max-width: 100%;
 	display: block;
@@ -19,18 +24,23 @@ img {
 
 /* Style rules for header content */
 header {
-	text-align: center;
-	font-size: 3em;
-	color: #373684;
+	width: 25%;
+	float: left;
 }
 
-header h1 {
+/* Style rules for company-name div: didn't want in header */
+#company-name {
+	text-align: center;
 	font-style: italic;
+	font-family: Verdana, Arial, sans-serif;
+	font-size: 1em;
+	color: #4acfee;
+	padding-top: 4em;
 }
 
 /* Style rules for navigation area */
 nav {
-	background-color: #373684;
+	background-color: #fff;
 }
 
 nav ul {
@@ -46,10 +56,17 @@ nav li {
 
 nav li a {
 	display: block;
-	color: #fff;
+	color: #000;
 	text-align: center;
-	padding: 0.5em 1em;
+	padding-right: 1em;
+	margin-top: 3em;
 	text-decoration: none;
+	transition-property: color;
+	transition-duration: 1ms;
+}
+
+nav li a:hover {
+	color: #0000ff;
 }
 
 /* Style rules for main content */
@@ -64,42 +81,11 @@ main p {
 	font-size: 1.25em;
 }
 
-.action {
-	font-size: 1.75em;
-	color: #373684;
-	font-weight: bold;
-}
-
-#piano, #guitar, #violin {
-	width: 29%;
-	float: left;
-	margin:  0 2%;
-}
-
-#info {
-	clear: left;
-	background-color: #c0caf7;
-	padding: 1%  2%;
-}
-
-#contact {
-	text-align: center;
-}
-
-#contact a {
-	color: #4645a8;
-	text-decoration: none;
-	font-weight: bold;
-}
-
-.map {
-	border: 5px solid #373684;
-}
 
 /* Style rules for footer content */
 footer {
 	text-align: center;
-	font-size: 0.65em;
+	font-size: 1em;
 	clear: left;
 }
 
