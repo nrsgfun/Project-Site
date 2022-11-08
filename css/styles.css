@@ -5,7 +5,7 @@ File Name: styles.css
 */
 
 /* CSS Reset */
-body, header, nav, main, footer, img, h1 {
+body, header, nav, main, footer, img, h1, ul {
 	margin: 0;
 	padding: 0;
 	border: 0;
@@ -14,60 +14,65 @@ body, header, nav, main, footer, img, h1 {
 /* Style rule for body and images */
 
 body {
-	background-color: #fff;
+	background-color: #000;
 }
-	
+
 img {
 	max-width: 100%;
 	display: block;
 }
 
+/* Style rules for mobile viewport */
+
+
 /* Style rules for header content */
 header {
-	width: 25%;
-	float: left;
+	position: -webkit-sticky;
+	position: sticky;
+	top: 0;
+	background-color: #000;
+	height: 220px;
 }
 
-/* Style rules for company-name div: didn't want in header */
-#company-name {
-	text-align: center;
-	font-style: italic;
-	font-family: Verdana, Arial, sans-serif;
-	font-size: 1em;
-	color: #4acfee;
-	padding-top: 4em;
+header img {
+	margin: 0 auto;
 }
 
 /* Style rules for navigation area */
 nav {
-	background-color: #fff;
+	padding: 1%;
+	margin: 1%;
+	background-color: #000;
 }
 
 nav ul {
 	list-style-type: none;
-	margin: 0;
 	text-align: center;
 }
 
+nav li:first-child {
+	border-top: none;
+}
+
 nav li {
-	display: inline-block;
-	font-size: 2em;
+	font-size: 1.5em;
+	font-family: 'Francois One', sans-serif;
+	border-top: 1px solid #fff;
+	
 }
 
 nav li a {
 	display: block;
-	color: #000;
-	text-align: center;
-	padding-right: 1em;
-	margin-top: 3em;
+	color: #fff;
+	padding: 0.5em 1em;
 	text-decoration: none;
-	transition-property: color;
-	transition-duration: 1ms;
+	
 }
 
 nav li a:hover {
 	color: #0000ff;
 }
+
 
 /* Style rules for main content */
 main {
