@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <!-- 
 	Student Name: Randy Rusch
-	File Name: index.html
-	Date: 11/07/2022
+	File Name: index2.html
+	Date: 11/13/2022
 -->
 
 <html lang="en">
@@ -14,22 +14,29 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link href="https://fonts.googleapis.com/css2?family=Francois+One&family=Roboto+Slab&display=swap" rel="stylesheet">
 	
+	<!-- Favicon links -->
+	<link rel="shortcut icon" href="images/favicon.ico">
+	<link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+	<link rel="icon" sizes="192x192" href="images/android-chrome-192.png">
+	
 </head>
 <body>
+<div id="container">
 
 	<!-- Use the header area for the website name or logo -->
 	<header>
 		
-		<a href="index.html"><img src="images/logo2.png" alt="Q & A Heating and Cooling logo"></a>
+		<a href="index2.html"><img src="images/logo2.png" alt="Q & A Heating and Cooling logo"></a>
 			
 	</header>
 				
 	<!-- Use the nav area to add hyperlinks to other pages within the website -->	
 		<nav>
 			<ul>
-				<li><a href="index.html">Home</a></li>
+				<li><a href="index2.html">Home</a></li>
 				<li><a href="about.html">About Us</a></li>
-				<li><a href="installs.html">Successful Installs</a></li>
+				<li><a href="testimonials.html">Testimonials</a></li>
 				<li><a href="contact.html">Contact Us</a></li>
 			</ul>
 		</nav>
@@ -41,13 +48,49 @@
 
 	<!-- Use the main area to add the main content of the webpage -->
 	
-		<main>
+	<main>
 	
-		<div id="intro">
+		<div id="mobile">
 		
 			<p>Welcome to Q & A Heating and Cooling. We are a local HVAC contractor, specializing in repairs, new installs, and preventative maintenance. Where Quality Meets Affordable.</p>
 			
+			<h3> FREE Inspection</h3>
+				<p> Call Us Today to Get Started</p>
+				<p class="tel-link"><a href="tel:8042956131">(804) 295-6131
+				</a></p>
+				
+				<h4>Q&A Heating and Cooling Hours:</h4>
+				<ul class="hours">
+					<li>Mon-Thu: 6:00am-6:00pm</li>
+					<li>Friday: 6:00am-4:00pm</li>
+					<li>Saturday & Sunday: Closed</li>
+					<li>Emergencies Anytime</li>					
+				</ul>
+			
 		</div>
+		
+		<div class="tablet-desktop">
+			<p>Welcome to Q & A Heating and Cooling. We are a local HVAC contractor, specializing in repairs, new installs, and preventative maintenance. Where Quality Meets Affordable.</p>
+		</div>
+		
+		<div class="grid">
+			
+				<figure class="frame">
+					<a href="about.html"><img src="images/service-photo.png" alt="thumb-up and other hand holding tool" class="round"></a>
+					<figcaption class="pic-text">Services</figcaption>
+				</figure>
+				
+				<figure class="frame">
+					<a href="testimonials.html"><img src="images/testimonials-photo.png" alt="people shaking hands"class="round"></a>
+					<figcaption class="pic-text">Happy Customers</figcaption>
+				</figure>
+				
+				<figure class="frame">
+					<a href="contact.html"><img src="images/contactus-photo.png" alt="person holding a tablet" class="round"></a>
+					<figcaption class="pic-text">Start Today</figcaption>
+				</figure>
+			
+			</div>	
 		
 	</main>
 
@@ -58,6 +101,8 @@
 			
 			<p><a href="mailto:qaheatingandcooling@gmail.com">qaheatingandcooling@gmail</a></p>
 			
-		</footer>	
+		</footer>
+
+</div>		
 </body>
 </html>
