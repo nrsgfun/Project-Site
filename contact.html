@@ -2,7 +2,7 @@
 <!-- 
 	Student Name: Randy Rusch
 	File Name: contact.html
-	Date: 11/13/2022
+	Date: 11/24/2022
 -->
 
 <html lang="en">
@@ -26,6 +26,7 @@
 	<!-- Use the header area for the website name or logo -->
 	<header>
 		
+		<h1>Q & A Heating and Cooling</h1>
 		<a href="index2.html"><img src="images/logo2.png" alt="Q & A Heating and Cooling logo"></a>
 			
 	</header>
@@ -43,20 +44,51 @@
 	<!-- Use the main area to add the main content of the webpage -->
 	
 		<main>
-			<div id="contact">
+	
+		<section id="contact"> 
 		
 			<h2>Ready to get started? Contact us today.</h2>
-			<h4 class="mobile tel-link"><a href="8042956131">(804) 295-6131</a></h4>
-			<h4 class="tablet-desktop tel-num">(804) 295-6131</h4>
-			<h4 class="contact-email-link">Email us: <a href="mailto:qaheatingandcooling@gmail.com">qaheatingandcooling@gmail</a></h4>
-			<h4>Visit us at: 558 Rocky Ford  Rd, Crewe VA 23930</h4>
+				<h4 class="mobile tel-link"><a href="8042956131">(804) 295-6131</a></h4>
+				<h4 class="tab-desk">(804) 295-6131</h4>
+				<h4 class="contact-email-link">Email us: <a href="mailto:qaheatingandcooling@gmail.com">qaheatingandcooling@gmail</a></h4>
+				<h4>Visit us at: 558 Rocky Ford  Rd, Crewe VA 23930</h4>
+				
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3179.7041690088176!2d-78.1377329!3d37.1597332!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b23b19c0ff70f1%3A0x536dcfedcd2cfea3!2s558%20Rocky%20Ford%20Rd%2C%20Crewe%2C%20VA%2023930!5e0!3m2!1sen!2sus!4v1668566256579!5m2!1sen!2sus" class="map"</iframe>
+			</iframe>
 			
-			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3179.7041690088176!2d-78.1377329!3d37.1597332!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b23b19c0ff70f1%3A0x536dcfedcd2cfea3!2s558%20Rocky%20Ford%20Rd%2C%20Crewe%2C%20VA%2023930!5e0!3m2!1sen!2sus!4v1668566256579!5m2!1sen!2sus" width="600" height="450"allowfullscreen class="map"</iframe>
+		</section>
+		
+		<section id="form">
+			<h2>Complete the form below and one of our staff members will contact you.</h2>
+			<form class="form-grid"><!--Start Form-->
+				<fieldset>
+					<label> Please tell us what information you are inquiring about.</label>
+					<textarea name="feedback" rows="5" cols="100"></textarea>
+				</fieldset>
 			
-		
-		</div>
-		
-		</main>
+				<fieldset>
+					<legend>Your Information</legend>
+					<label for="fName">First Name:</label>
+					<input type="text" name="fName" id="fName">
+					
+					<label for="lName">Last Name:</label>
+					<input type="text" name="lName" id="lName">
+					
+					<label for="email">Email:</label>
+					<input type="email" name="email" id="email">
+					
+					<label for="phone">Phone:</label>
+					<input type="tel" name="phone" id="phone">
+				</fieldset>
+											
+				<input type="submit" id="submit" value="Submit" class="btn">
+				
+			</form>
+				
+				
+		</section>
+	
+	</main>
 
 	<!-- Use the footer area to add webpage footer content -->	
 		<footer>
@@ -66,6 +98,6 @@
 			<p><a href="mailto:qaheatingandcooling@gmail.com">qaheatingandcooling@gmail</a></p>
 			
 		</footer>
-			
+	
 </body>
 </html>
