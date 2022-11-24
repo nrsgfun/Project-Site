@@ -1,371 +1,330 @@
 /*
 Student Name: Randy Rusch
-Current Date: 11/14/2022
+Current Date: 11/24/2022
 File Name: styles.css
 */
 
 /* CSS Reset */
-body, header, nav, main, footer, img, h1, ul, figure, figcaption, section, article, aside {
-	margin: 0;
-	padding: 0;
-	border: 0;
-}
+	body, header, nav, main, footer, img, h1, ul, figure, figcaption, section, article, aside {
+		margin: 0;
+		padding: 0;
+		border: 0;
+	}
 
 /* Style rule for body and images */
 
-body {
-	background-color: #000;
-}
+	body {
+		background-color: #000;
+	}
 
-img {
-	max-width: 100%;
-	display: block;
-}
+	img {
+		max-width: 100%;
+		display: block;
+	}
 
 /* Style rule for box sizing applies to all elements */
-*{
-	box-sizing: border-box;
-}
+	*{
+		box-sizing: border-box;
+	}
 
 /* Style rules for mobile viewport */
 
-aside {
-	text-align: center;
-	font-size: 1.5em;
-	font-weight: bold;
-	color: #373684;
-	text-shadow: 3px 3px 10px #8280cd;
-}
+	/* Style rules for header content */
+	header {
+		top: 0;
+		background-color: #000;
+		height: 240px;
+		color: #fff;
+		text-align: center;
+	}
 
-figure {
-	position: relative;
-	max-width: 275px;
-	margin: 2% auto;
-	border: 8px solid #373684;
-}
+	header h1 {
+		font-size: 1.5em;
+	}
 
-figcaption {
-	position: absolute;
-	bottom: 0;
-	background: rgba(55,54,132,0.7);
-	color: #fff;
-	width: 100%;
-	padding: 5% 0;
-	text-align: center;
-	font-family: Verdana, Arial, sans-serif;
-	font-size: 1.5em;
-	font-weight: bold;
-}
-
-/* Hide tab-desk class */
-.tab-desk {
-	display: none;
-}
-
-/* Style rules for header content */
-header {
-	top: 0;
-	background-color: #000;
-	height: 220px;
-}
-
-header img {
-	margin: 0 auto;
+	header img {
+		margin: 0 auto;
 }
 
 /* Style rules for navigation area */
-nav {
-	padding: 1%;
-	margin: 1%;
-}
-
-nav ul {
-	list-style-type: none;
-	text-align: center;
-}
-
-nav li:first-child {
-	border-top: none;
-}
-
-nav li {
-	font-size: 1.5em;
-	font-family: 'Francois One', sans-serif;
-	border-top: 1px solid #fff;
-	
-}
-
-nav li a {
-	display: block;
-	color: #fff;
-	padding: 0.5em 1em;
-	text-decoration: none;
-	
-}
-
-nav li a:hover {
-	color: #0000ff;
-}
-
-/* Show mobile class, hide tablet-desktop class
-.mobile {
-	display: block;
-}
-.tablet-desktop {
-	display: none;
-}*/
-
-/* Style rules for main content */
-main {
-	padding: 2%;
-	background-color: #e5e9fc;
-	font-size: 1.5em;
-	font-family: Verdana, Arial, sans-serif;
-}
-
-main p {
-	font-size: 1.25em;
-}
-
-article {
-	padding: 2%;
-}
-
-article h3 {
-	text-align: center;
-}
-
-article img {
-	margin: 0 auto;
-}
-
-article ul {
-	margin-left: 10%;
-}
-
-article:nth-of-type(2) {
-	background-color: rgba(204,204,204,0.3);
-}
-
-.tel-link {
-	background-color: #404040;
-	padding: 2%;
-	margin: 0 auto;
-	width: 80%;
-	text-align: center;
-	border-radius: 5px;
-}
-
-.tab-desk a {
-	background-color: #404040;
-	text-decoration: none;
-	font-size: 1.5em;
-	padding: 2%;
-	margin: 0 auto;
-	width: 80%;
-	text-align: center;
-	border-radius: 5px;
-}
-
-.hours {
-	margin-left: 10%;
-}
-
-.frame {
-	position: relative;
-	max-width: 450px;
-	margin: 2% auto;
-}
-
-.pic-text {
-	position: absolute;
-	bottom: 0;
-	background: rgba(0,0,0,0.5);
-	color: #fff;
-	width: 100%;
-	padding: 20px;
-	text-align: center;
-	font-family: Verdana, Arial, sans-serif;
-	font-size: 1.5em;
-	font-weight: bold;
-}
-
-.round {
-	border-radius: 8px;
-}
-
-#contact {
-	text-align: center;
-}
-
-#contact .email-link a {
-	color: #666600;
-	text-decoration: none;
-}
-
-.map {
-	border: 5px solid #000;
-	width: 95%;
-	height: 50%;
-}
-
-/* Style rules for form elements */
-fieldset {
-	margin-bottom: 2%;
-}
-
-fieldset legend {
-	font-weight: bold;
-	font-size: 1.25em;
-}
-
-label {
-	display: block;
-	padding-top: 3%;
-}
-
-#submit {
-	margin: 0 auto;
-	display: block;
-	padding: 3%;
-	background-color: #b7b7e1;
-	font-size: 1em;
-	color: #fff;
-}
-
-.btn {
-		grid-column: 1 / span 2;
+	nav {
+		padding: 1%;
+		margin: 1%;
 	}
 
-/* Style rules for footer content */
-footer p {
-	font-size: 0.75em;
-	text-align: center;
-	color: #fff;
-	padding: 0 1em;
+	nav ul {
+		list-style-type: none;
+		text-align: center;
+	}
+
+	nav li:first-child {
+		border-top: none;
+	}
+
+	nav li {
+		font-size: 1.5em;
+		font-family: 'Francois One', sans-serif;
+		border-top: 1px solid #fff;
+		
+	}
+
+	nav li a {
+		display: block;
+		color: #fff;
+		padding: 0.5em 1em;
+		text-decoration: none;
+		
+	}
+
+	nav li a:hover {
+		color: #0000ff;
+	}
+				
+/* Show mobile class, hide tablet-desktop class */
+	.mobile {
+		display: block;
+	}
+
+	.tab-desk {
+		display: none;
 }
 
-footer p a {
-	color: #fff;
-	text-decoration: none;
-}
+/* Style rules for main content */
+	main {
+		padding: 2%;
+		background-color: #e5e9fc;
+		font-size: 1em;
+		font-family: Verdana, Arial, sans-serif;
+	}
+		
+	figure {
+		position: relative;
+		max-width: 275px;
+		margin: 2% auto;
+		/*border: 8px solid #373684;*/
+	}
 
-/* Media query for tablet viewport */
+	figcaption {
+		position: absolute;
+		bottom: 0;
+		background: rgba(55,54,132,0.7);
+		color: #fff;
+		width: 100%;
+		padding: 5% 0;
+		text-align: center;
+		font-family: Verdana, Arial, sans-serif;
+		font-size: 1.5em;
+		font-weight: bold;
+	}
+	
+	article {
+		padding: 2%;
+		font-size: 0.75em;
+	}
+
+	article h3 {
+		text-align: center;
+	}
+
+	article img {
+		margin: 0 auto;
+	}
+
+	article ul {
+		margin-left: 10%;
+	}
+
+	article:nth-of-type(2) {
+		background-color: rgba(204,204,204,0.3);
+	}
+
+	.tel-link {
+		background-color: #373684;
+		padding: 2%;
+		margin: 0 auto;
+		width: 80%;
+		text-align: center;
+		border-radius: 5px;
+	}
+
+	.tab-desk a {
+		color: #fff;
+		text-decoration: none;
+		font-size: 1.5em;
+		display: block;
+	}
+
+	#contact .email-link {
+		color: #4645a8;
+		text-decoration: none;
+		font-weight: bold;
+		text-align: center;
+	}
+	
+	.map {
+		
+		border: 5px solid #373684;
+		width: 95%;
+		height: 50%;
+	}
+
+	.round {
+		border-radius: 8px;
+	}
+	
+	#contact {
+		text-align: center;
+	}
+	
+	/* Style rules for form elements */
+	fieldset {
+		margin-bottom: 2%;
+	}
+
+	fieldset legend {
+		font-weight: bold;
+		font-size: 1em;
+	}
+
+	label {
+		display: block;
+		padding-top: 3%;
+	}
+
+	#submit {
+		margin: 0 auto;
+		display: block;
+		padding: 3%;
+		background-color: #b7b7e1;
+		font-size: 1em;
+		color: #fff;
+	}
+	
+	textarea {
+		width: 100%;
+		height: 100%;
+	}
+	
+	/* Style rules for footer content */
+	footer {
+		text-align: center;
+		font-size: 0.65em;
+		clear: left;
+	}
+
+	footer a {
+		color: #4645a8;
+		text-decoration: none;
+	}
+			
+/* Media query for tablet vieport */
 @media screen and (min-width: 550px), print {
-
-	/* Tablet viewport: Show tab-desk class, hide mobile class */
+	
+	/* Tablet viewport: show tab-desk class, hide mobile class */
 	.tab-desk {
 		display: block;
 	}
+	
 	.mobile {
 		display: none;
 	}
-
+	
 	/* Tablet viewport: Style rule for header */
-	tab-desk {
+	header {
 		padding-bottom: 2%;
 	}
-
+	
 	/* Tablet viewport: Style rules for nav area */
 	nav li {
 		border-top: none;
 		display: inline-block;
 		border-right: 1px solid #fff;
 	}
-
+	
 	nav li:last-child {
 		border-right: none;
 	}
-
-	/*nav li a {
+	
+	nav li a {
 		padding: 0.1em 0.75em;
-	}*/
-
+	}	
+		
 	/* Tablet viewport: Style rules for main content area */
-	main ul {
-		margin: 0 0 4% 10%;
-	}
 
+	main p {
+		font-size: 1.25em;
+	}
+		
+	/* Tablet Viewport: Style rule for form element */
+	#form {
+		width: 70%;
+		margin: 0 auto;
+	}
+	
 	.grid {
 		display: grid;
 		grid-template-columns: auto auto auto;
 		grid-gap: 20px;
 	}
 	
-	.grid-item4 {
-		grid-column: 1 / span 3;
-	}
-
 	.pic-text {
 		font-size: 1em;
 		padding: 10px;
 	}
-
-	aside {
-		text-align: center;
-		font-size: 1.25em;
-		font-style: italic;
-		font-weight: bold;
-		padding: 2%;
-		background-color: rgba(204,204,204,0.5);
-		box-shadow: 5px 5px 8px #000;
-		text-shadow: 5px 5px 5px #b3b3b3;
-		border-radius: 0 15px;
+	
+	.company-grid {
+		display: grid;
+		grid-template-columns: auto auto auto auto;
+		grid-gap: 20px;
 	}
 	
-	/* Tablet Viewport: Style rule for form element */
-	#form {
-		width: 70%;
-		margin: 0 auto;
-	}
-
-	.tel-num {
-		font-size: 1.25em;
-	}
-
+	/* Tablet viewport: style rule for map */
 	.map {
 		width: 500px;
 		height: 450px;
 	}
-}
 	
-/*Media query for desktop viewport */
+/* Media query for desktop viewport */
 @media screen and (min-width: 1128px), print {
-/* Desktop viewport: Style rule for header */
+	/* Desktop viewport: Style rule for header */
 	header {
 		width: 25%;
 		float: left;
 		padding-bottom: 0;
+		height: 250px;
 	}
 	
-/* Desktop viewport: Style rules for nav area */
+	/* Desktop viewport: Style rules for nav area */
 	nav {
 		float: right;
 		width: 70%;
 		margin: 4em 1em 0 0;
 	}
-
+	
 	nav ul {
 		text-align: right;
 	}
-
+	
 	nav li {
 		border: none;
 	}
-
+	
 	nav li a {
 		padding: 0.5em 1em;
 	}
-
+	
 	nav li a:hover {
 		color: #000;
 		background-color: #fff;
 	}
-}
-
-/* Desktop Viewport: Style Rules for main content */
+	
+	
+	
+	/* Desktop Viewport: Style Rules for main content */
 	main {
 		clear: left;
+		p {
+		font-size: 1.25em;
 	}
 	
 	head h1 {
@@ -389,25 +348,24 @@ footer p a {
 		opacity: 1;
 		box-shadow: 8px 8px 10px #808080;
 	}
-	 
- }
-	 
-/* Media Query for Large Desktop Viewports */
-@media screen and (min-width: 1921px) {
-		
-	#container {
-		width: 1920px;
-		margin: 0 auto;
+	
+	.grid {
+		grid-template-columns: auto auto auto;
 	}
 	
-}
-
-/* Media Query for Print */
-@media print {
-		
-	body {
-		background-color: #fff;
-		color: #000;
+	figcaption {
+		font-size: 1em;
 	}
-		
-}
+	
+	.company-grid {
+		grid-template-columns: auto auto auto;
+	}
+	
+	/* Desktop Viewport: Style rules for form elements */
+	.form-grid {
+		display: grid;
+		grid-template-columns: auto atuo;
+	}
+	.btn {
+		grid-column: 1 / span 2
+	}
