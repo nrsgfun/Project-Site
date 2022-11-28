@@ -1,6 +1,6 @@
 /*
 Student Name: Randy Rusch
-Current Date: 11/24/2022
+Current Date: 11/2/2022
 File Name: styles.css
 */
 
@@ -33,7 +33,7 @@ File Name: styles.css
 	header {
 		top: 0;
 		background-color: #000;
-		height: 240px;
+		height: 250px;
 		color: #fff;
 		text-align: center;
 	}
@@ -46,46 +46,30 @@ File Name: styles.css
 		margin: 0 auto;
 }
 
-/* Style rules for navigation area */
-	nav {
-		padding: 1%;
-		margin: 1%;
-	}
-
-	nav ul {
-		list-style-type: none;
-		text-align: center;
-	}
-
-	nav li:first-child {
-		border-top: none;
-	}
-
-	nav li {
-		font-size: 1.5em;
-		font-family: 'Francois One', sans-serif;
-		border-top: 1px solid #fff;
-		
-	}
-
-	nav li a {
-		display: block;
+	/* Style rules for Hamburger menu */
+	.mobile-nav a {
 		color: #fff;
-		padding: 0.5em 1em;
+		font-family: 'Francois One', sans-serif;
+		text-align: center;
+		font-size: 2em;
 		text-decoration: none;
-		
+		padding: 3%;
+		display: block;
+	}
+	
+	.mobile-nav a.menu-icon {
+		display: block;
+		position: absolute;
+		right: 0;
+		top: 25px;
 	}
 
-	nav li a:hover {
-		color: #0000ff;
-	}
-				
 /* Show mobile class, hide tablet-desktop class */
 	.mobile {
 		display: block;
 	}
 
-	.tab-desk {
+	.tab-desk, #menu-links {
 		display: none;
 }
 
@@ -225,7 +209,7 @@ File Name: styles.css
 		display: block;
 	}
 	
-	.mobile {
+	.mobile, .mobile-nav {
 		display: none;
 	}
 	
@@ -235,10 +219,25 @@ File Name: styles.css
 	}
 	
 	/* Tablet viewport: Style rules for nav area */
+	nav {
+		padding: 1%;
+		margin: 1%;
+	}
+	
+	nav ul {
+		list-style-type: none;
+		text-align: center;
+	}
+			
 	nav li {
-		border-top: none;
+		font-size: 1.25em;
+		font-family: 'Francois One', sans-serif;
 		display: inline-block;
 		border-right: 1px solid #fff;
+	}
+	
+	nav li:first-child {
+		border-top: none;
 	}
 	
 	nav li:last-child {
@@ -246,8 +245,15 @@ File Name: styles.css
 	}
 	
 	nav li a {
-		padding: 0.1em 0.75em;
-	}	
+			display: block;
+			color: #fff;
+			padding: 0.1em 0.75em;
+			text-decoration: none;
+		}
+
+	nav li a:hover {
+			color: #0000ff;
+		}	
 		
 	/* Tablet viewport: Style rules for main content area */
 
@@ -276,6 +282,28 @@ File Name: styles.css
 		display: grid;
 		grid-template-columns: auto auto auto auto;
 		grid-gap: 20px;
+	}
+	
+	/*Tablet Viewport: Animation*/
+	@-webkit-keyframes text-animation {
+		0% { font-size: 1em; }
+		50% { font-size: 2em; }
+		100% {font-size: 1.35em: }
+	}
+	
+	@-keyframes text-animation {
+		0% { font-size: 1em; }
+		50% { font-size: 2em; }
+		100% { font-size: 1.35em; }
+	}
+	
+	figcaption {
+		-webkit-animation-name: text-animation;
+		animation-name: text-animation;
+		-webkit-animation-delay: 3s;
+		animation-delay: 3s;
+		-webkit-animation-duration: 5s;
+		animation-duration: 5s;
 	}
 	
 	/* Tablet viewport: style rule for map */
