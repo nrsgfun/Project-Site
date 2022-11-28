@@ -22,10 +22,24 @@
 	
 </head>
 <body>
+
+	<!-- Mobile Nav -->
+			<nav class="mobile-nav">
+				<div id="menu-links">
+					<a href="index2.html">Home</a>
+					<a href="about.html">About Us</a>
+					<a href="testimonials.html">Testimonials</a>
+					<a href="contact.html">Contact Us</a>
+				</div>
+				<a class="menu-icon" onclick="hamburger()">
+					<div>&#9776;</div>
+				</a>
+			</nav>
+
 	<section id="container">
 
 	<!-- Use the header area for the website name or logo -->
-	<header>
+	<header id="ffc-logo">
 		
 		<h1>Q & A Heating and Cooling</h1>
 		<a href="index2.html"><img src="images/logo2.png" alt="Q & A Heating and Cooling logo"></a>
@@ -33,7 +47,7 @@
 	</header>
 			
 	<!-- Use the nav area to add hyperlinks to other pages within the website -->	
-		<nav>
+		<nav class="tab-desk">
 			<ul>
 				<li><a href="index2.html">Home</a></li>
 				<li><a href="about.html">About Us</a></li>
@@ -49,25 +63,29 @@
 
 	<!-- Use the main area to add the main content of the webpage -->
 		<main class="grid">
-			
+									
 			<article>
 				<h3>Testimonial 1</h3>
 				<img src="images/circuit-breaker-panel.png" alt="circuit breaker panel" class="round">
 				<p>Denise of Lake Villa called me for a sales estimate for a new air conditioning system which had not been working for over a year. Two other hvac contractors said she had a bad compressor, which is a major component, and needed to replace the entire system. I checked out the system and found that the compressor was operational but the circuit breaker was undersized and couldn’t handle the power the a/c required. I installed a start-assist kit which reduces the consumption of power below requirements of the circuit breaker. I recommended to eventually replace the circuit breaker. Total cost to replace the breaker and upgrade the electrical is about $360 vs. a few thousand for a new system.  She was amazed and thrilled to have her “dead” system working again, especially for less than $150.</p>
+				
 			</article>
 			
 			<article>
 			<h3>Testimonial 2</h3>
 			<img src="images/circuit-breaker-panel.png" alt="circuit breaker panel" class="round">
 				<p>Jeri Petro: We contacted Nelson Comfort 10/5/22 for a free 2nd opinion to replace our old Trane furnace. Mike came to our home the next day and provided an estimate for a Lennox gas furnace replacement and an Aprilaire humidifier (which was not included on our first estimate from our current HVAC company). Mike's estimate was well over $1000 below our first estimate. Early today (10/10/22), exactly one week after learning our furnace needed to be replaced, Matt arrived to install our new Lennox furnace (and humidifier). Matt and Tyler completed the installation in 5 1/2 hours. They were prompt, courteous, and professional, and they answered all of our questions. We are entirely satisfied with their work and with the price we paid for our new furnace. We strongly recommend you consider Nelson Comfort if you find yourself in need of a new furnace.</p>
+				
 			</article>
 			
 			<article>
 			<h3> Testimonial 3</h3>
 			<img src="images/circuit-breaker-panel.png" alt="circuit breaker panel" class="round">
-				<p>"We have been doing business with David at A/C Solutions for over 15 years. We have found him to be honest, cordial and trustworthy and his quality of service and timeliness have consistently been excellent.  David inspects the problem, explains what he finds and provides cost effective options that don’t necessarily mean a replacement. On June 30 (Sunday morning) we noticed that the house wasn’t cool.  We unsuccessfully tried a few things ourselves and ended up calling A/C Solutions in the late afternoon. David was out promptly Monday morning and after considering the options he provided, we chose to replace our old unit. David made the arrangements to have the unit delivered the next morning and he was out bright and early – 5:30 am – to begin the installation prep work.  All went very well and we have a brand new, less costly than we expected, Trane unit that we are very happy with. David spent a long time at our house working outside and in the attic to be sure everything was perfect before he left.  We would not hesitate to highly recommend David and his A/C Solutions team.</p>
+				<p>"We have been doing business with David at A/C Solutions for over 15 years. We have found him to be honest, cordial and trustworthy and his quality of service and timeliness have consistently been excellent.  David inspects the problem, explains what he finds and provides cost effective options that don’t necessarily mean a replacement. On June 30 (Sunday morning) we noticed that the house wasn’t cool.  We unsuccessfully tried a few things ourselves and ended up calling A/C Solutions in the late afternoon.David was out promptly Monday morning and after considering the options he provided, we chose to replace our old unit. David made the arrangements to have the unit delivered the next morning and he was out bright and early – 5:30 am – to begin the installation prep work.  All went very well and we have a brand new, less costly than we expected, Trane unit that we are very happy with. David spent a long time at our house working outside and in the attic to be sure everything was perfect before he left.  We would not hesitate to highly recommend David and his A/C Solutions team.</p>
+				
 			</article>
-									
+			
+						
 		</main>
 
 	<!-- Use the footer area to add webpage footer content -->	
@@ -76,6 +94,9 @@
 			<p><a href="mailto:qaheatingandcooling@gmail.com">qaheatingandcooling@gmail</a></p>
 		</footer>
 		
-</section>	
+</section>
+		
+		<script src="scripts/script.js"></script>
+	
 </body>
 </html>
