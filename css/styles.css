@@ -5,7 +5,7 @@ File Name: styles.css
 */
 
 /* CSS Reset */
-	body, header, nav, main, footer, img, h1, ul, figure, figcaption, section, article, aside {
+	body, header, nav, main, footer, img, h1, ul, figure, figcaption, section, article, audio, video {
 		margin: 0;
 		padding: 0;
 		border: 0;
@@ -17,7 +17,7 @@ File Name: styles.css
 		background-color: #000;
 	}
 
-	img {
+	img, video {
 		max-width: 100%;
 		display: block;
 	}
@@ -79,6 +79,11 @@ File Name: styles.css
 		background-color: #e5e9fc;
 		font-size: 1em;
 		font-family: Verdana, Arial, sans-serif;
+	}
+	
+	video {
+		margin: 0 auto 4%;
+		max-width: auto;
 	}
 		
 	figure {
