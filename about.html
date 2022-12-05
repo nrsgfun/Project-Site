@@ -9,9 +9,10 @@
 <head>
 
 	<meta charset="utf-8">
-	<title>About Us</title>
-	<link rel="stylesheet" href="css/styles.css">
+	<title>About Us | Q&A Heating and Cooling</title>
+	<link rel="stylesheet" href="css/styles.min.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Q&A Heating and Cooling uses and installs state-of-the-art equipment.">
 	<link href="https://fonts.googleapis.com/css2?family=Francois+One&family=Roboto+Slab&display=swap" rel="stylesheet">
 	
 	<!-- Favicon links -->
@@ -58,23 +59,23 @@
 	
 		<main>
 		
-			<video controls poster="images/man-svcing-sys4.png">
+			<video controls autoplay muted poster="images/man-svcing-sys4.png">
 				<source src="media/ffc_video.mp4" type="video/mp4">
-				<track src="media/captions.vtt" kind="captions" srclang="en" label="Captions">
 				<source src="media/ffc_video/webm" type="video/webm">
+				<track src="media/captions.vtt" kind="captions" srclang="en" label="Captions">
 				<track src="media/descriptions.vtt" kind="descriptions" srclang="en" label="English Descriptions">
 				<p>Your browser does not support the video element.</p>
 			</video>
 		
-			<section class="company-grid">
+			<div class="company-grid">
 				
 					<figure class="frame">
 						<a href="about.html"><img src="images/QA-owner.png" alt="thumb-up and other hand holding tool" class="round"></a>
-						<figcaption class="pic-text">Owner</figcaption>
+						<figcaption class="pic-text">Owner Mike</figcaption>
 					</figure>
 					
 					<figure class="frame">
-						<a href="testimonials.html"><img src="images/QA-jack.png" alt="people shaking hands"class="round"></a>
+						<a href="testimonials.html"><img src="images/QA-jack.png" alt="people shaking hands" class="round"></a>
 						<figcaption class="pic-text">Technician Jack</figcaption>
 					</figure>
 					
@@ -82,22 +83,56 @@
 						<a href="contact.html"><img src="images/QA-jason_tom.png" alt="person holding a tablet" class="round"></a>
 						<figcaption class="pic-text">Technicians Jason and Tom</figcaption>
 					</figure>
+													
+				</div>
+			
+			<div id="rental">
+						
+				<table>
+					<caption>Years of Experience and Where We Live</caption>
 					
-					<figure class="frame">
-						<a href="contact.html"><img src="images/QA-ricky.png" alt="person holding a tablet" class="round"></a>
-						<figcaption class="pic-text">Technician Ricky</figcaption>
-					</figure>
-				
-				</section>
-				
-				<div id="music-sample">
+					<tr><!--Row 1-->
+						<th>Employee</th>
+						<th>Years of Experience</th>
+						<th>Town</th>
+					</tr>
+					
+					<tr><!--Row 2-->
+						<td>Mike</td>
+						<td>15</td>
+						<td>Crewe</td>
+					</tr>
+					
+					<tr><!--Row 3-->
+						<td>Jack</td>
+						<td>10</td>
+						<td>Crewe</td>
+					</tr>
+					
+					<tr><!--Row 4-->
+						<td>Jason</td>
+						<td>7</td>
+						<td>Burkeville</td>
+					</tr>
+					
+					<tr><!--Row 5-->
+						<td>Tom</td>
+						<td>3</td>
+						<td>Blackstone</td>
+					</tr>
+									
+				</table>
 		
-			<h3>We play upbeat music to help keep you focused during your work. Below is a sample of the type of music played when we work.</h3>
-			<audio controls>
-				<source src="media/ffc_audio.mp3" type="audio/mp3">
-				<source src="media/ffc_audio.ogg" type="audio/ogg">
-				<p>Your browser not support the audio element.</p>
-			</audio>
+			</div>
+				
+			<div id="music-sample">
+		
+				<h3>We play upbeat music to help keep you focused during your work. Below is a sample of the type of music played when we work.</h3>
+				<audio controls>
+					<source src="media/ffc_audio.mp3" type="audio/mp3">
+					<source src="media/ffc_audio.ogg" type="audio/ogg">
+					<p>Your browser not support the audio element.</p>
+				</audio>
 			
 		</div>
 				
@@ -105,10 +140,19 @@
 
 	<!-- Use the footer area to add webpage footer content -->	
 		<footer>
-		
-			<p>&copy; Copyright 2022. All Rights Reserve.</p>
 			
-			<p><a href="mailto:qaheatingandcooling@gmail.com">qaheatingandcooling@gmail</a></p>
+			<div class="copyright">
+		
+				<p>&copy; Copyright 2022. All Rights Reserve.</p>
+				
+				<p><a href="mailto:qaheatingandcooling@gmail.com">qaheatingandcooling@gmail</a></p>
+			
+			</div>
+			
+			<div class="social">
+				<a href="https://www.facebook.com/qaheatingandcooling" target="_blank"><img src="images/facebook-logo.png" alt="black and white Facebook logo"></a>
+				<a href="https://www.twitter.com/" target="_blank"><img src="images/twitter-logo.png" alt="black and white Twitter logo"></a>
+			</div>
 			
 		</footer>
 		
